@@ -13,15 +13,33 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: 900;
+            padding: 7px;
+            background-color: lightgrey;
+        }
+        
+        thead, tfoot{
+            color: white;
+            background-color: gray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
         td, th{
             border: 2px solid black;
             padding: 10px;
-        }
-        thead, tfoot{
-            color: white;
-            background-color: gray;
         }
         
         .num{
@@ -42,10 +60,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Populacao Federativa</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao</th>
             </tr>
         </thead>
 
@@ -73,7 +92,80 @@
             <tr>
                 <td>Rio de janeiro</td>
                 <td class="num">17 264 943</td>
-            </tr><tr>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
                 <td>Sao Paulo</td>
                 <td class="num">45 919 049</td>
             </tr>
@@ -90,7 +182,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Abitante</th>
+                <th scope="row">Total de Abitante</th>
                 <strong><td class="num">000 000 000</td></strong>
             </tr>
         </tfoot>
